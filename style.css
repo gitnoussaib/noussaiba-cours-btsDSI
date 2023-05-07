@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?fsmily=poppins:wght@300;400;500;600;700&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)50%,rgba(0, 0, 0, 0.3)50%),url('ph1.jpg');
+    background-size:cover;
+    height:70vh;
+    width:100px;
+    margin-left: 90px;
+    font-family: sans-serif;
+}
+.navbar{
+    
+    width: 95%;
+    height: auto;
+    margin-left: 30px;
+}
+.logo{
+    border-radius: 2px;
+    background: #110542;
+    color: rgb(132, 0, 255);
+    font-size: 40px;
+    font-family: cursive;
+    cursor: pointer;
+}
+.logo {
+    width: 1180px; 
+    height: 50px;
+}
+
+.logo:hover{
+    background: #111;
+    border-radius: 8px;
+}
+
+.menu{
+    width: 300px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 135%;
+}
+ul li{
+    list-style: none;
+    margin-left: 60px;
+    font-size: 17px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: .3s ease;
+    border-radius: 20px;
+    padding: 6px 15px;
+}
+ul li a:hover{
+    background: #fff;
+    color:#874a97;
+
+}
+.main-container .car img{
+    left: 900px;
+    position: absolute;
+    right: 500px;
+    margin-top: 0px;
+}
+.car img:hover{
+    background: #3f364d00;
+    color:#874a97;
+}
+body footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #111;
+}
+.main-content{
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    right: 0px ;
+    background-color: #24262b;
+    color: #fff;
+}
+.main-content{
+    display: flex;
+  
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+.box .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+.box .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: rgba(151, 69, 174, 0.695);
+    top: -10px;
+}
+.left .content p{
+    text-align: justify;
+}
+
+.left .content .social{
+    margin:20px 0 0 0;
+
+}
+.left .content .social a{
+    padding: 0 2px;
+
+}
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.left .content .social a span:hover{
+    background: #690a76;
+}
+.center .content .fas{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.center .content .fas:hover{
+    background: #690a76;
+}
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left:10px;
+}
+.center .content .phone{
+    margin: 10px 0;
+}
+.right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+.right form .msg{
+    margin-top: 10px;
+}
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border:  1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+    outline-color: #3498db;
+}
+.right form input{
+    height: 35px;
+}
+.right form .btn{
+    margin-top: 10px;
+}
+.right form .btn button{
+    height: 60px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #690a76;
+    font-size: 1.0625rem;
+    font-weight: 5000;
+    cursor: pointer;
+    transition: .3s;
+}
+.right form .btn button:hover{
+    background: #110542;
+}
+.bottom center{
+    padding:5px ;
+    font-size: 0.9375rem;
+    background: #151515;
+    position: fixed;
+    bottom: 0px;
+    width: 100%; 
+    height: 24px;
+    bottom: 0px;
+     right: 0px;
+}
+.bottom center span{
+    color:#656565;
+}
+ .bottom center a{
+    color: #740e80;
+    text-decoration: none;
+
+}
+.bottom center a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:900px) {
+    footer{
+        position: relative;
+        bottom: 0;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box{
+        margin: 5px 0;
+    }
+}
